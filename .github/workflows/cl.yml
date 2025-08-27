@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.10, 3.12]  # two Python versions to test
+        python-version: [3.11, 3.12]  # two Python versions to test
 
     steps:
       - name: Checkout repository
