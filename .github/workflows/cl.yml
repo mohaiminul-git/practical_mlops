@@ -1,14 +1,15 @@
-name: Azure Python 3.5
+name: Python CI  # updated name to reflect matrix versions
 
 on:
   push:
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.10, 3.12]
+        python-version: [3.10, 3.12]  # two Python versions to test
 
     steps:
       - name: Checkout repository
